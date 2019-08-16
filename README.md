@@ -1,3 +1,16 @@
+# campstate
+
+```bash
+go get github.com/drbh/campaign-state-mgmt
+```
+
+```bash
+go run examples/test.go 
+```
+
+
+
+```golang
 package main
 
 import (
@@ -83,3 +96,26 @@ func main() {
     }
 
 }
+```
+
+### Response 
+
+```bash
+Send:  Will you respond in time to get first class tickets!?!
+Send:  Yes! you answered in time! here is a link to you tickets -- Do you want a reminder?
+Send:  Hey don't forget to come to the show! It's in an hour
+-Terminate
+
+
+Different Sitch
+Send:  Will you respond in time to get first class tickets!?!
+Send:  Yes! you answered in time! here is a link to you tickets -- Do you want a reminder?
+Send:  Removing you from the contact list
+-Terminate
+
+
+Different Sitch
+Send:  Will you respond in time to get first class tickets!?!
+Send:  Womp womp womp, maybe next time!
+-Terminate
+```
